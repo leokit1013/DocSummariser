@@ -163,9 +163,9 @@ def summarize_pdf(pdf_file):
 
 def main():
     st.title("DocSummarizer")
-    st.write("Upload a document in PDF format below and I'll summarize it for you")
+    st.write("Upload a document in PDF/Docx/Txt format below and I'll summarize it for you")
 
-    uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
+    uploaded_file = st.file_uploader("Upload a PDF/Docx/Txt file", type="pdf")
 
     if uploaded_file:
         with st.spinner("Summarizing the document..."):
