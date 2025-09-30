@@ -163,9 +163,9 @@ def summarize_pdf(pdf_file):
 
 def main():
     st.title("DocSummarizer")
-    st.write("Upload a document (PDF, TXT, DOCX, JPG, JPEG, PNG) and get a summary.")
+    st.write("Upload a document (PDF, TXT, DOCX) and get a summary.")
 
-    uploaded_file = st.file_uploader("Choose a file", type=["pdf", "txt", "docx", "jpg", "jpeg", "png"])
+    uploaded_file = st.file_uploader("Choose a file", type=["pdf", "txt", "docx"])
 
     if uploaded_file:
         with st.spinner("Summarizing the document..."):
@@ -178,4 +178,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
